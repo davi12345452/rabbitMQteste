@@ -1,2 +1,6 @@
-dockerRabbitMQ
-node_modules
+/node_modules
+# Ignorar todos os arquivos .yml
+*.yml
+
+# Permitir o arquivo example.yml
+!docker-compose-example.yml
