@@ -1,0 +1,16 @@
+# Esse docker compose permite a criação de um container rodando Rabbit. O objetivo é entender a
+# a interação desse serviço com um serviço express básico
+
+services:
+    rabbitmq:
+        image: rabbitmq:3-management
+        container_name: {NOME DO CONTAINER}
+        restart: always
+        ports:
+            - 5672:5672     # Porta de interação do Rabbit
+            - 15672:15672   # Porta do dashboard
+        volumes:
+            - ./{NOME DO CONTAINER}/var/lib/rabbitmq/
+        environment:
+            - RABBITMQ_DEFAULT_USER={USER DO RABBIT}
+            - RABBITMQ_DEFAULT_PASS={SENHA DO RABBIT}

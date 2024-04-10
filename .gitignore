@@ -1,6 +1,7 @@
 /node_modules
 # Ignorar todos os arquivos .yml
 *.yml
+*.env
 
 # Permitir o arquivo example.yml
 !docker-compose-example.yml
