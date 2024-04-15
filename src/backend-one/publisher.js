@@ -1,5 +1,5 @@
 const amqp = require('amqplib/callback_api')
-require('dotenv').config()
+require('dotenv').config({path: '../../.env'})
 
 async function publisher(queueName, message) {
     amqp.connect({

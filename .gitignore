@@ -1,4 +1,5 @@
 /node_modules
+/dockerRabbitMQ
 # Ignorar todos os arquivos .yml
 *.yml
 *.env
